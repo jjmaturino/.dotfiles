@@ -104,6 +104,8 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        nvim_lsp = "[LSP]",
+        nvim_lua = "[NVIM_LUA]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
@@ -115,6 +117,8 @@ cmp.setup {
   -- Auto-Complete Sources
   -- desc: Order of precedence for auto-complete options; i.e snip options will be displayed ahead of buffer and path options
   sources = {
+    { name = "nvim_lsp"},
+    { name = "nvim_lua"},
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },

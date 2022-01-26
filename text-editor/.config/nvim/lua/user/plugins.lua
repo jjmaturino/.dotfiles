@@ -25,7 +25,7 @@ vim.cmd [[
 
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
-if not status_ok the
+if not status_ok then
   return
 end
 
@@ -53,9 +53,10 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path"  -- path completions
-  use "hrsh7th/cpm-cmdline"  -- cmdline completions
+  use "hrsh7th/cmp-cmdline"  -- cmdline completions
   use "saadparwaiz1/cmp_luasnip"  -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"  
+  use "hrsh7th/cmp-nvim-lua"  -- lua vim config completions
+  use "hrsh7th/cmp-nvim-lsp"  -- gives lsp completions
 
   -- snippets
   use "L3MON4D3/LuaSnip"  -- snippet engine
