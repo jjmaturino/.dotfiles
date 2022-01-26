@@ -47,7 +47,7 @@ return packer.startup(function(use)
 
 
   -- Colorschemes
-  use "folke/tokyonight.nvim"  -- Tokyo Night Color-Theme : https://github.com/folke/tokyonight.nvim  
+  use "folke/tokyonight.nvim"  -- Tokyo Night Color-Theme : https://github.com/folke/tokyonight.nvim
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -65,6 +65,18 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer"  -- simple to use language server installer
+
+  -- Telescope
+  use 'nvim-telescope/telescope.nvim'  -- Great Fuzzy Finder; requires nvim-lua/plenary
+  use 'nvim-telescope/telescope-media-files.nvim' -- previews images via telescope
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use 'p00f/nvim-ts-rainbow'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
