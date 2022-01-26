@@ -1,0 +1,13 @@
+
+# General Alias
+alias ll = "ls -lsah"  # verbose ls command
+alias vim = "nvim"
+alias zshconfig="vim~/.zshrc"
+
+
+# AWS alias
+alias ecoaws="docker run --rm -it -v ~/.config/aws/ecocart/.aws:/root/.aws amazon/aws-cli"
+
+alias awsedua="docker run --rm -it -v ~/.config/aws/edua/.aws:/root/.aws amazon/aws-cli"
+
+
