@@ -1,5 +1,4 @@
 # Install Nix
-
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then  # if OS is Linux 
 	sh <(curl -L https://nixos.org/nix/install) --daemon
 elif [[ "$OSTYPE" == "darwin"* ]]; then  # if OS is MacOS
