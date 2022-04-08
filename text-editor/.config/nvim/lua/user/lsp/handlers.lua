@@ -1,8 +1,3 @@
--- Title: Lsp handler
--- Desc:  Create an exportable variable that handles lsp handler setup.
---        This file also is resposible for keybindings related to lsp and how lsp is displayed
-
-
 local M = {}
 
 -- TODO: backfill this to template
