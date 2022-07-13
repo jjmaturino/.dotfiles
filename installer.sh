@@ -10,10 +10,10 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then  # if OS is MacOS
 fi
 
 # Source Nix
-~/.nix-profile/etc/profile.d/nix.sh
+source ~/.nix-profile/etc/profile.d/nix.sh
 
 # Install Nix Packages
-./plugins.sh
+#./plugins.sh
 
 # Bundle Zsh Pluggins with AntiBody
-antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+# antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh

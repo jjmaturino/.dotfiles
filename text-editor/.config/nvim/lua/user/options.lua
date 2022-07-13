@@ -1,3 +1,4 @@
+-- :help options to read full descriptions of vim options
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -41,6 +42,7 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
+-- VIMSCRIPT
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]] -- makes keywords end post dash; i.e. hello-world
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work

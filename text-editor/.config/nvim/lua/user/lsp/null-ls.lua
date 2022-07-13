@@ -22,13 +22,21 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote" } }),
+		formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.gofmt,
+		-- formatting.rustfmt,
+		-- formatting.shellharden,
+		-- formatting.terraform_fmt,
+		formatting.stylua,
 		diagnostics.eslint,
 		diagnostics.stylelint,
-		formatting.black.with({ extra_args = { "--fast" } }),
 		diagnostics.flake8,
+		-- diagnostics.pydocstyle,
+		diagnostics.golangci_lint,
+		-- diagnostics.hadolint,
+		-- diagnostics.markdownlint,
 
 		--   formatting.yapf,
-		formatting.stylua,
 		--    diagnostics.pylint,
 	},
 })
